@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Pulse - Next Gen Social Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                <span>Social Pulse</span>
+            </div>
+            
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#feed">
+                            <i class="fas fa-newspaper"></i>
+                            <span>Feed</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#trending">
+                            <i class="fas fa-fire"></i>
+                            <span>Trending</span>
+                            <div class="notification-badge">3</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#messages">
+                            <i class="fas fa-envelope"></i>
+                            <span>Messages</span>
+                            <div class="notification-badge">5</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="user-menu">
+                <img src="https://imgv3.fotor.com/images/slider-image/A-clear-close-up-photo-of-a-woman.jpg" alt="User">
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <div class="user-profile">
+                <img src="https://imgv3.fotor.com/images/slider-image/A-clear-close-up-photo-of-a-woman.jpg" alt="User" class="user-avatar">
+                <div class="user-info">
+                    <h4>Sarah Johnson</h4>
+                    <p>@sarahj</p>
+                </div>
+            </div>
+            
+            <div class="sidebar-menu">
+                <h3>Menu <span class="badge">New</span></h3>
+                <ul>
+                    <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-user-friends"></i> Friends <span class="badge">12</span></a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i> Notifications <span class="badge">5</span></a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Messages <span class="badge">3</span></a></li>
+                    <li><a href="#"><i class="fas fa-bookmark"></i> Saved</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-menu">
+                <h3>Shortcuts</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-users"></i> Groups</a></li>
+                    <li><a href="#"><i class="fas fa-calendar"></i> Events</a></li>
+                    <li><a href="#"><i class="fas fa-video"></i> Videos</a></li>
+                    <li><a href="#"><i class="fas fa-image"></i> Photos</a></li>
+                    <li><a href="#"><i class="fas fa-gamepad"></i> Games</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-menu">
+                <h3>Your Pages</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-flag"></i> Travel Blog</a></li>
+                    <li><a href="#"><i class="fas fa-utensils"></i> Food Recipes</a></li>
+                </ul>
+            </div>
+        </aside>
+        
+        <main class="main-content" id="feed">
+            <div class="stories">
+                <div class="story create-story">
+                    <i class="fas fa-plus"></i>
+                    <span>Create Story</span>
+                </div>
+                <div class="story">
+                    <img src="https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg" alt="User" class="story-avatar">
+                    <img src="https://plus.unsplash.com/premium_photo-1681422570054-9ae5b8b03e46?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3Vuc2V0fGVufDB8fDB8fHww" alt="Story" class="story-bg">
+                    <div class="story-user">Emma</div>
+                </div>
+                <div class="story">
+                    <img src="https://tse1.mm.bing.net/th/id/OET.7252da000e8341b2ba1fb61c275c1f30?w=594&h=594&c=7&rs=1&o=5&pid=1.9" alt="User" class="story-avatar">
+                    <img src="https://cdn0.weddingwire.in/article/6191/3_2/960/jpg/111916-limelightstudiosindia.jpeg" alt="Story" class="story-bg">
+                    <div class="story-user">James</div>
+                </div>
+                <div class="story">
+                    <img src="https://media.istockphoto.com/id/674297770/photo/a-woman-at-the-beach.jpg?s=612x612&w=0&k=20&c=Cp0zdD9574CBNVTWJWwHiij8nn0R70fE9hjNp7VNTnM=" alt="User" class="story-avatar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmf3z8xId2DQnK9G05IpqcorYnCCpdWUpSFQ&s" alt="Story" class="story-bg">
+                    <div class="story-user">Sophia</div>
+                </div>
+                <div class="story">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKk2x7i96Dkt-jDQUzgB0fXRykBuc6JrjjdcdTbMBCQfFIxrFfpWWJVJEIj2ytHMgufuk&usqp=CAU" alt="User" class="story-avatar">
+                    <img src="https://motociclismo.pt/wp-content/uploads/2025/03/2025032025032025-03-21T080620Z_2102709507_UP1EL3L0MIIA0_RTRMADP_3_MOTOR-F1-CHINA-scaled-1.jpg" alt="Story" class="story-bg">
+                    <div class="story-user">Robert</div>
+                </div>
+                <div class="story">
+                    <img src="https://www.adobe.com/acrobat/hub/media_156d2658f9d70eef870bf26bea02e0d59bf6748ef.jpeg?width=750&format=jpeg&optimize=medium" alt="User" class="story-avatar">
+                    <img src="https://static.pica-ai.com/_next/static/media/enhance-after-1.6eadbe40.png" alt="Story" class="story-bg">
+                    <div class="story-user">Olivia</div>
+                </div>
+            </div>
+            
+            <div class="create-post">
+                <div class="post-input">
+                    <img src="https://imgv3.fotor.com/images/slider-image/A-clear-close-up-photo-of-a-woman.jpg" alt="User">
+                    <input type="text" placeholder="What's on your mind, Sarah?">
+                </div>
+                <div class="post-actions">
+                    <div class="post-action">
+                        <i class="fas fa-video"></i>
+                        <span>Live Video</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="fas fa-image"></i>
+                        <span>Photo/Video</span>
+                    </div>
+                    <div class="post-action">
+                        <i class="fas fa-smile"></i>
+                        <span>Feeling/Activity</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="feed">
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://i.pinimg.com/564x/63/e5/f1/63e5f1aefc26676a2c7f8d0fd8a2ef3c.jpg" alt="User">
+                            <div class="user-details">
+                                <h4>Michael Chen</h4>
+                                <p>2 hours ago · <i class="fas fa-globe-americas"></i></p>
+                            </div>
+                        </div>
+                        <div class="post-options">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-text">Just finished my morning hike! The view was absolutely breathtaking. Nature always helps me clear my mind and get ready for the week ahead. 🏞️ #MondayMotivation</p>
+                    </div>
+                    <div class="post-stats">
+                        <div class="likes">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>124</span>
+                        </div>
+                        <div class="comments">
+                            <span>23 comments</span>
+                            <span>8 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-actions">
+                        <div class="post-btn like-btn">
+                            <i class="far fa-thumbs-up"></i>
+                            <span>Like</span>
+                            <div class="emoji-reactions">
+                                <span>👍</span>
+                                <span>❤️</span>
+                                <span>😂</span>
+                                <span>😮</span>
+                                <span>😢</span>
+                                <span>😡</span>
+                            </div>
+                        </div>
+                        <div class="post-btn">
+                            <i class="far fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-btn">
+                            <i class="fas fa-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvvjk7tyAKoKt50laF-QKjPyDjuM_HOIEDmDfK57KFXFX3gRD4CXXVc2-9PRdBhZmXgVw&usqp=CAU" alt="User">
+                            <div class="user-details">
+                                <h4>Jessica Williams</h4>
+                                <p>5 hours ago · <i class="fas fa-user-friends"></i></p>
+                            </div>
+                        </div>
+                        <div class="post-options">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-text">Our team just launched the new product! After months of hard work, it's finally out in the world. So proud of everyone who contributed to this project. 🚀 #ProductLaunch #TeamWork</p>
+                        <img src="https://img.freepik.com/premium-photo/group-multiethnic-business-people-working-together-office_52137-37754.jpg?semt=ais_hybrid&w=740" alt="Post" class="post-image">
+                    </div>
+                    <div class="post-stats">
+                        <div class="likes">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>89</span>
+                        </div>
+                        <div class="comments">
+                            <span>14 comments</span>
+                            <span>5 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-actions">
+                        <div class="post-btn like-btn">
+                            <i class="far fa-thumbs-up"></i>
+                            <span>Like</span>
+                            <div class="emoji-reactions">
+                                <span>👍</span>
+                                <span>❤️</span>
+                                <span>😂</span>
+                                <span>😮</span>
+                                <span>😢</span>
+                                <span>😡</span>
+                            </div>
+                        </div>
+                        <div class="post-btn">
+                            <i class="far fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-btn">
+                            <i class="fas fa-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://t3.ftcdn.net/jpg/13/34/54/00/360_F_1334540082_uDQGMAVdZiLWkqNtTvlL1mnoXIETuFWw.jpg" alt="User">
+                            <div class="user-details">
+                                <h4>David Kim</h4>
+                                <p>Yesterday · <i class="fas fa-globe-americas"></i></p>
+                            </div>
+                        </div>
+                        <div class="post-options">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-text">Sharing this amazing recipe I tried last night! The flavors were incredible and it was surprisingly easy to make. Who says healthy food has to be boring? 🍲 #Foodie #HealthyEating</p>
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhbHRoeSUyMGZvb2R8ZW58MHx8MHx8fDA%3D" alt="Post" class="post-image">
+                    </div>
+                    <div class="post-stats">
+                        <div class="likes">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>156</span>
+                        </div>
+                        <div class="comments">
+                            <span>42 comments</span>
+                            <span>12 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-actions">
+                        <div class="post-btn like-btn">
+                            <i class="far fa-thumbs-up"></i>
+                            <span>Like</span>
+                            <div class="emoji-reactions">
+                                <span>👍</span>
+                                <span>❤️</span>
+                                <span>😂</span>
+                                <span>😮</span>
+                                <span>😢</span>
+                                <span>😡</span>
+                            </div>
+                        </div>
+                        <div class="post-btn">
+                            <i class="far fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-btn">
+                            <i class="fas fa-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="post-header">
+                        <div class="post-user">
+                            <img src="https://media.istockphoto.com/id/906151200/photo/girl-and-sunset.jpg?s=612x612&w=0&k=20&c=uUt1MtrLsg2tC76VMqwn0Nai5ZKrK7PozEGGHtQoZck=" alt="User">
+                            <div class="user-details">
+                                <h4>Emily Rodriguez</h4>
+                                <p>2 days ago · <i class="fas fa-user-friends"></i></p>
+                            </div>
+                        </div>
+                        <div class="post-options">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p class="post-text">Just booked my tickets for Bali! Can't wait for this adventure. Any recommendations for must-visit places? 🌴 #Travel #Adventure</p>
+                        <img src="https://media.istockphoto.com/id/1065043970/photo/young-woman-sitting-on-edge-looks-out-at-view.jpg?s=612x612&w=0&k=20&c=zXlF6EJwCHDAtEJ_kh8zs6PqliCKZA75F93ffAkJURY=" alt="Post" class="post-image">
+                    </div>
+                    <div class="post-stats">
+                        <div class="likes">
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>201</span>
+                        </div>
+                        <div class="comments">
+                            <span>37 comments</span>
+                            <span>15 shares</span>
+                        </div>
+                    </div>
+                    <div class="post-actions">
+                        <div class="post-btn like-btn">
+                            <i class="far fa-thumbs-up"></i>
+                            <span>Like</span>
+                            <div class="emoji-reactions">
+                                <span>👍</span>
+                                <span>❤️</span>
+                                <span>😂</span>
+                                <span>😮</span>
+                                <span>😢</span>
+                                <span>😡</span>
+                            </div>
+                        </div>
+                        <div class="post-btn">
+                            <i class="far fa-comment"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div class="post-btn">
+                            <i class="fas fa-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <aside class="right-sidebar" id="trending">
+            <div class="trending-section">
+                <h3 class="section-title"><i class="fas fa-fire"></i> Trending Today</h3>
+                <div class="trending-item">
+                    <div class="trending-number">1</div>
+                    <div class="trending-content">
+                        <h4>#TechConference2023</h4>
+                        <p>12.5K posts</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-number">2</div>
+                    <div class="trending-content">
+                        <h4>New AI Breakthrough</h4>
+                        <p>8.7K posts</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-number">3</div>
+                    <div class="trending-content">
+                        <h4>Summer Travel Deals</h4>
+                        <p>6.2K posts</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-number">4</div>
+                    <div class="trending-content">
+                        <h4>Movie Release</h4>
+                        <p>5.9K posts</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-number">5</div>
+                    <div class="trending-content">
+                        <h4>Fitness Challenge</h4>
+                        <p>4.3K posts</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="trending-section">
+                <h3 class="section-title"><i class="fas fa-user-friends"></i> Friends Activity</h3>
+                <div class="trending-item">
+                    <div class="trending-number"><i class="fas fa-heart" style="color: var(--accent);"></i></div>
+                    <div class="trending-content">
+                        <h4>Emma liked a post</h4>
+                        <p>2 min ago</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-number"><i class="fas fa-comment" style="color: var(--success);"></i></div>
+                    <div class="trending-content">
+                        <h4>James commented</h4>
+                        <p>15 min ago</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-number"><i class="fas fa-share" style="color: var(--primary);"></i></div>
+                    <div class="trending-content">
+                        <h4>Sophia shared a post</h4>
+                        <p>1 hour ago</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-number"><i class="fas fa-user-plus" style="color: var(--warning);"></i></div>
+                    <div class="trending-content">
+                        <h4>Robert added a friend</h4>
+                        <p>3 hours ago</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="suggested-users">
+                <h3 class="section-title"><i class="fas fa-user-plus"></i> Suggested Friends</h3>
+                <div class="user-card">
+                    <img src="https://www.befunky.com/images/wp/wp-2016-06-beautify-before.jpg?auto=avif,webp&format=jpg&width=944" alt="User">
+                    <div class="user-info">
+                        <h4>Emma Rodriguez</h4>
+                        <p>12 mutual friends</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="user-card">
+                    <img src="https://thumbs.dreamstime.com/b/relaxed-young-man-drink-first-morning-coffee-withh-rain-drops-modern-home-indoors-rainy-window-window-61585742.jpg" alt="User">
+                    <div class="user-info">
+                        <h4>James Wilson</h4>
+                        <p>8 mutual friends</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="user-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAU-jzNKcOfqiADPLGiiJvfzktsWtzVkvVWzRkTi1ICX5Uz0yJ5jVBo1EDfoYLFinESQQ&usqp=CAU" alt="User">
+                    <div class="user-info">
+                        <h4>Sophia Lee</h4>
+                        <p>5 mutual friends</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="user-card">
+                    <img src="https://thumbs.dreamstime.com/b/man-dress-shirt-smiling-his-smartphone-modern-office-setting-wearing-white-looking-happily-standing-bright-345588241.jpg" alt="User">
+                    <div class="user-info">
+                        <h4>Robert Garcia</h4>
+                        <p>3 mutual friends</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+                <div class="user-card">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5f8876aafd43bb4edf164a45/523a7667-f8fc-46a8-97e7-ddc34363811b/Images+%281%29.jpg" alt="User">
+                    <div class="user-info">
+                        <h4>Olivia Martinez</h4>
+                        <p>7 mutual friends</p>
+                    </div>
+                    <button class="follow-btn">Follow</button>
+                </div>
+            </div>
+            
+            <div class="trending-section">
+                <h3 class="section-title"><i class="fas fa-calendar-alt"></i> Upcoming Events</h3>
+                <div class="trending-item">
+                    <div class="trending-number"><i class="fas fa-music" style="color: var(--accent);"></i></div>
+                    <div class="trending-content">
+                        <h4>Summer Music Festival</h4>
+                        <p>June 15, 2023</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-number"><i class="fas fa-laptop-code" style="color: var(--primary);"></i></div>
+                    <div class="trending-content">
+                        <h4>Tech Conference</h4>
+                        <p>July 5-7, 2023</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <div class="trending-number"><i class="fas fa-utensils" style="color: var(--warning);"></i></div>
+                    <div class="trending-content">
+                        <h4>Food Expo</h4>
+                        <p>August 12, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Image Preview</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="Preview" style="width: 100%; border-radius: 8px;">
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+<script src="script.js"></script>
+</html>
